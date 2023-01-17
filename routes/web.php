@@ -17,5 +17,8 @@ use App\Http\Controllers\BellmanFordController;
 Route::get('bellman-ford', 'BellmanFordController@index')->name('bellman-ford.index');
 Route::post('bellman-ford/calculate', 'BellmanFordController@calculate')->name('bellman-ford.calculate');
 Route::get('/', function () {
+    return view('bellman-ford.index');
+});
+Route::get('/1', function () {
     return view('welcome');
 });
